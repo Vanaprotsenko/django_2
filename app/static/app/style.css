@@ -4,11 +4,41 @@
     
 }
 select{
-    width: 35%;
+    width: 15%;
     border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50%;
     
+    
+}
+.btn{
+    position: relative;
+    display: flex;
+    text-align: center;
+    width: 20%;
+    left:15%;
+    top:12%;
+
+}
+.btn .text_top{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    border-radius: 6px;
+    padding:5px;
+    position: absolute;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    left:13%;
+    bottom:100%;
+    
+}
+.btn:hover .text_top{
+    visibility: visible;
+    opacity: 1;
 }
